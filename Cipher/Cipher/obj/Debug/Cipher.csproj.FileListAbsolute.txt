@@ -1,0 +1,12 @@
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\bin\Debug\Cipher.exe.config
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\bin\Debug\Cipher.exe
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\bin\Debug\Cipher.pdb
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.csprojResolveAssemblyReference.cache
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.cipherMainWindow.resources
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.Form2.resources
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.TooShortForm.resources
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.Properties.Resources.resources
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.csproj.GenerateResource.Cache
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.csproj.CoreCompileInputs.cache
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.exe
+D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.pdb
