@@ -64,12 +64,14 @@
             this.InfoOkBtn.TabIndex = 2;
             this.InfoOkBtn.Text = "OK";
             this.InfoOkBtn.UseVisualStyleBackColor = true;
+            this.InfoOkBtn.Click += new System.EventHandler(this.InfoOkBtn_Click);
             // 
             // InfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 161);
+            this.ControlBox = false;
             this.Controls.Add(this.InfoOkBtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);

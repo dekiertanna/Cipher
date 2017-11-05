@@ -10,3 +10,16 @@ D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.csproj.Gene
 D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.csproj.CoreCompileInputs.cache
 D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.exe
 D:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.pdb
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\bin\Debug\Cipher.exe.config
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\bin\Debug\Cipher.exe
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\bin\Debug\Cipher.pdb
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.csprojResolveAssemblyReference.cache
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.cipherMainWindow.resources
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.Form2.resources
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.TooShortForm.resources
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.InfoForm.resources
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.Properties.Resources.resources
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.csproj.GenerateResource.Cache
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.exe
+C:\Users\Anna\Documents\GitHub\Cipher\Cipher\Cipher\obj\Debug\Cipher.pdb

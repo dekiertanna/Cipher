@@ -38,6 +38,8 @@
             this.keyTextBox = new System.Windows.Forms.TextBox();
             this.infoBtn = new System.Windows.Forms.Button();
             this.startCipherBtn = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -65,6 +67,7 @@
             this.fileToCipherBtn.TabIndex = 2;
             this.fileToCipherBtn.Text = "Przeglądaj...";
             this.fileToCipherBtn.UseVisualStyleBackColor = true;
+            this.fileToCipherBtn.Click += new System.EventHandler(this.fileToCipherBtn_Click);
             // 
             // label2
             // 
@@ -92,6 +95,7 @@
             this.saveLocationBtn.TabIndex = 5;
             this.saveLocationBtn.Text = "Przeglądaj...";
             this.saveLocationBtn.UseVisualStyleBackColor = true;
+            this.saveLocationBtn.Click += new System.EventHandler(this.saveLocationBtn_Click);
             // 
             // label3
             // 
@@ -107,6 +111,7 @@
             // 
             this.keyTextBox.Location = new System.Drawing.Point(15, 225);
             this.keyTextBox.Name = "keyTextBox";
+            this.keyTextBox.PasswordChar = '*';
             this.keyTextBox.Size = new System.Drawing.Size(430, 20);
             this.keyTextBox.TabIndex = 7;
             // 
@@ -118,6 +123,7 @@
             this.infoBtn.TabIndex = 8;
             this.infoBtn.Text = "Info...";
             this.infoBtn.UseVisualStyleBackColor = true;
+            this.infoBtn.Click += new System.EventHandler(this.infoBtn_Click);
             // 
             // startCipherBtn
             // 
@@ -127,6 +133,15 @@
             this.startCipherBtn.TabIndex = 9;
             this.startCipherBtn.Text = "Szyfruj!";
             this.startCipherBtn.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
+            // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.DefaultExt = "cry";
+            this.saveFileDialog.Filter = "Encrypted File (*.cry)|*.cry";
             // 
             // cipherMainWindow
             // 
@@ -163,6 +178,8 @@
         private System.Windows.Forms.TextBox keyTextBox;
         private System.Windows.Forms.Button infoBtn;
         private System.Windows.Forms.Button startCipherBtn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }
 

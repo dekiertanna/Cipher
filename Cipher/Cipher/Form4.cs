@@ -16,5 +16,10 @@ namespace Cipher
         {
             InitializeComponent();
         }
+
+        private void InfoOkBtn_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
