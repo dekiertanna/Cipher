@@ -16,6 +16,11 @@ namespace Cipher
         public cipherMainWindow()
         {
             InitializeComponent();
+            Encoder enc = new Encoder();
+            enc.ReadFileContents("tekst.txt");
+            enc.SetKey("lacina");
+            enc.DivideIntoBlocks();
+            enc.Permutate();
         }
 
         private void Form1_Load(object sender, EventArgs e)
