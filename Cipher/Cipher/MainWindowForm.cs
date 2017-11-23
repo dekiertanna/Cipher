@@ -21,6 +21,10 @@ namespace Cipher
             enc.SetKey("lacina");
             enc.DivideIntoBlocks();
             enc.Permutate();
+            enc.setASCIIblocks();
+            enc.Replace();
+            enc.ConverToString();
+            enc.WriteOutputToFile("output.txt");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -41,6 +45,7 @@ namespace Cipher
         private void fileToCipherBtn_Click(object sender, EventArgs e)
         {
             int size = -1;
+            
             DialogResult result = openFileDialog.ShowDialog();
 
             if(result == DialogResult.OK)
@@ -61,19 +66,16 @@ namespace Cipher
 
         private void saveLocationBtn_Click(object sender, EventArgs e)
         {
-            int size = -1;
-            DialogResult result = saveFileDialog.ShowDialog();
+            saveFileDialog = new SaveFileDialog();
 
-            if(result == DialogResult.OK)
+            saveFileDialog.Filter = "Encrypted File(*.cry) | *.cry";
+            saveFileDialog.Title = "Gdzie chcesz zapisać plik?";
+            saveFileDialog.ShowDialog();
+
+            if(saveFileDialog.FileName!="")
             {
-                string file = saveFileDialog.FileName;
-                try
-                {
-                    string text = File.ReadAllText(file);
-                    size = text.Length;
-                    saveLocationPath.Text = Path.GetFullPath(saveFileDialog.FileName);
-                }
-                catch (IOException) { }
+                saveLocationPath.Text = saveFileDialog.FileName;
+
             }
         }
 
@@ -81,6 +83,12 @@ namespace Cipher
         {
             InfoForm info = new InfoForm();
             info.ShowDialog();
+        }
+
+        private void startCipherBtn_Click(object sender, EventArgs e)
+        {
+            Encoder enc = new Encoder();
+            enc.Encode(fileToCipherPath.Text, saveLocationPath.Text, keyTextBox.Text);
         }
     }
 }

@@ -133,6 +133,7 @@
             this.startCipherBtn.TabIndex = 9;
             this.startCipherBtn.Text = "Szyfruj!";
             this.startCipherBtn.UseVisualStyleBackColor = true;
+            this.startCipherBtn.Click += new System.EventHandler(this.startCipherBtn_Click);
             // 
             // openFileDialog
             // 
