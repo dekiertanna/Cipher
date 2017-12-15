@@ -109,6 +109,7 @@ namespace Cipher
             .ToList();
             indexOrder = sorted.Select(x => x.Value).ToList();
             indexOrder.Reverse();
+            
            
 
             foreach(string s in blocks)
@@ -120,8 +121,11 @@ namespace Cipher
                 }
                 permutatedBlocks.Add(temp);
             }
-
-            
+            Console.WriteLine("permutate");
+            foreach (int i in indexOrder)
+            {
+                Console.Write(i + " ");
+            }
 
         }
 

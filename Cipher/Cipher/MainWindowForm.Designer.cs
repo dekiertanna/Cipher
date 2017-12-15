@@ -37,9 +37,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.keyTextBox = new System.Windows.Forms.TextBox();
             this.infoBtn = new System.Windows.Forms.Button();
-            this.startCipherBtn = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.startCipherBtn = new System.Windows.Forms.Button();
+            this.startDecoderBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -125,6 +126,15 @@
             this.infoBtn.UseVisualStyleBackColor = true;
             this.infoBtn.Click += new System.EventHandler(this.infoBtn_Click);
             // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
+            this.openFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog_FileOk);
+            // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.FilterIndex = 0;
+            // 
             // startCipherBtn
             // 
             this.startCipherBtn.Location = new System.Drawing.Point(15, 279);
@@ -135,20 +145,22 @@
             this.startCipherBtn.UseVisualStyleBackColor = true;
             this.startCipherBtn.Click += new System.EventHandler(this.startCipherBtn_Click);
             // 
-            // openFileDialog
+            // startDecoderBtn
             // 
-            this.openFileDialog.FileName = "openFileDialog1";
-            // 
-            // saveFileDialog
-            // 
-            this.saveFileDialog.DefaultExt = "cry";
-            this.saveFileDialog.Filter = "Encrypted File (*.cry)|*.cry";
+            this.startDecoderBtn.Location = new System.Drawing.Point(116, 278);
+            this.startDecoderBtn.Name = "startDecoderBtn";
+            this.startDecoderBtn.Size = new System.Drawing.Size(75, 23);
+            this.startDecoderBtn.TabIndex = 10;
+            this.startDecoderBtn.Text = "Deszyfruj!";
+            this.startDecoderBtn.UseVisualStyleBackColor = true;
+            this.startDecoderBtn.Click += new System.EventHandler(this.startDecoderBtn_Click);
             // 
             // cipherMainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 335);
+            this.Controls.Add(this.startDecoderBtn);
             this.Controls.Add(this.startCipherBtn);
             this.Controls.Add(this.infoBtn);
             this.Controls.Add(this.keyTextBox);
@@ -178,9 +190,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox keyTextBox;
         private System.Windows.Forms.Button infoBtn;
-        private System.Windows.Forms.Button startCipherBtn;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.Button startCipherBtn;
+        private System.Windows.Forms.Button startDecoderBtn;
     }
 }
 

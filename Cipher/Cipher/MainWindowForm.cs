@@ -76,7 +76,7 @@ namespace Cipher
         {
             saveFileDialog = new SaveFileDialog();
 
-            saveFileDialog.Filter = "Encrypted File(*.cry) | *.cry";
+            saveFileDialog.Filter = "";
             saveFileDialog.Title = "Gdzie chcesz zapisać plik?";
             saveFileDialog.ShowDialog();
 
@@ -97,6 +97,18 @@ namespace Cipher
         {
             Encoder enc = new Encoder();
             enc.Encode(fileToCipherPath.Text, saveLocationPath.Text, keyTextBox.Text);
+        }
+
+        private void startDecoderBtn_Click(object sender, EventArgs e)
+        {
+            saveFileDialog.Filter = "text(*.txt)| *.txt";
+            Decoder dec = new Decoder();
+            dec.Decode(fileToCipherPath.Text, saveLocationPath.Text, keyTextBox.Text);
+        }
+
+        private void openFileDialog_FileOk(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }
