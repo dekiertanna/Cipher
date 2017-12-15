@@ -25,6 +25,14 @@ namespace Cipher
             enc.Replace();
             enc.ConverToString();
             enc.WriteOutputToFile("output.txt");
+
+            Decoder dec = new Decoder();
+            dec.ReadFileContents("test.cry");
+            dec.SetKey("lacina");
+            dec.DivideIntoBlocks();
+            dec.Replace();
+            dec.Depermutate();
+            dec.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)

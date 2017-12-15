@@ -84,7 +84,7 @@ namespace Cipher
             {
                 foreach(int i in l)
                 {
-                    Console.Write(i + " ");
+                    Console.Write((char)i+ " ");
                 }
                 Console.WriteLine();
             }
@@ -135,8 +135,8 @@ namespace Cipher
                 {
                     int keyCode = key[i];
                     int blockCode = lint[i];
-                    int shift = Math.Abs(blockCode - keyCode);
-                    int newVal = blockCode + shift;
+                   // int shift = Math.Abs(blockCode - keyCode);
+                    int newVal = blockCode + keyCode;
                     if(newVal>255)
                     {
                         newVal = newVal - 255;
